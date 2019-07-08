@@ -6,7 +6,7 @@
 
 html {
     font-family: 'SF Pro display';
-    font-size: 15px;
+    font-size: 16px;
 }
 
 body {
@@ -53,7 +53,7 @@ ul, ol, h1, h2, h3 {
     margin: 0 auto;
     height: 100px;
     display: flex;
-    max-width: 990px;
+    max-width: 1350px;
     justify-content: center;
 }
 .page-sub-nav__content > ul {
@@ -62,7 +62,7 @@ ul, ol, h1, h2, h3 {
     align-items: center;
     justify-content: center;
     width: 100%;
-    max-width: 980px;
+    max-width: 1350px;
 }
 .page-nav__link2 {
     display: flex;
@@ -85,30 +85,50 @@ ul, ol, h1, h2, h3 {
 }
 .section-description {
     text-align: center;
+    padding-top: 25px;
 }
 
 .section-content {
     max-width: 990px;
     margin: 0 auto;
-    border: 1px solid red;
+    
 }
 .section-description > h1 {
     font-size: 3.5rem;
 }
+.section-description > h2 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
 
 .sub-header {
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-    max-width: 480px;
+    text-align: center;
     margin: 0 auto;
+    color: #888;
+    padding-top: 0.75rem;
+}
+.sub-header span {
+    padding: 10px;
+}
+.details {
+    padding-top: 20px;
+    color: #0070c9;
+    text-decoration: none;
+    font-size: 16px;
+}
+.details > a {
+    color: #0070c9;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 200;
 }
 
 .main__img {
     display: block;
     width: 60%;
     min-width: 400px;
-    margin: 60px auto;
+    margin: 0px auto;
+    padding: 60px;
 }
 
 .page-nav__switcher {
@@ -156,6 +176,86 @@ ul, ol, h1, h2, h3 {
     align-items: center;
     width: 100%;
 }
+.iphone_8 {
+     background-color: #f9f0eb;
+     margin-top: 25px;
+}
+.iphone8_img {
+    text-align: center;
+}
+.iphone8_img img{
+    width: 60%; 
+    padding: 0;
+}
+.compare_models {
+   margin-top: 25px;
+}
+.section-content__models {
+    display: flex;
+    max-width: 1350px;
+    margin: 0 auto;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+    background-color: #fafafa;;
+    
+}
+.section-description__iphones {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding-left: 30px;
+ 
+}
+.section-description__iphones h1 {
+    font-size: 45px;
+    
+}
+.compare_img {
+    width: 50%;
+    padding: 25px 0 0 25px;
+}
+.compare_img img {
+    width: 100%;
+}
+.ios_11 {
+    margin-top: 25px;
+}
+.section-content__ios_11 {
+    background-color: #fafafa;
+    display: flex;
+    max-width: 1350px;
+    margin: 0 auto;
+    padding: 0 25px;
+    align-items: center;
+}
+.section-description > p {
+ font-size: 20px;
+ padding: 15px;
+}
+
+.section_image {
+    width: 100%;
+}
+.three_phones {
+    display: flex;
+    justify-content: flex-end;
+    margin: 50px 0;
+}
+.ios__11 {
+    width: 80%;
+    margin: 0 auto;
+    padding: 0 25px;
+}
+
+
+
+
+
+
+
+
+
 
 @media (max-width: 767px) {
     .page-nav__controls {
