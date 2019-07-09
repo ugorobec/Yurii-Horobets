@@ -126,14 +126,11 @@ __webpack_require__.r(__webpack_exports__);
 var btns = document.getElementsByClassName('page-nav__switcher');
 var par = document.getElementsByClassName('page-nav');
 
-btns[0].onclick = function () {
-  par[0].classList.add("opened");
-  console.log('ПРивет');
-};
-
-btns[1].onclick = function () {
-  par[0].classList.remove("opened");
-};
+if (btns.length > 0) {
+  btns[0].onclick = function () {
+    par[0].classList.toggle("opened");
+  };
+}
 
 /***/ }),
 
