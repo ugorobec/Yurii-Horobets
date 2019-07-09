@@ -86,6 +86,17 @@
 /************************************************************************/
 /******/ ({
 
+/***/ "./src/homework_6/font-awesome.min.css":
+/*!*********************************************!*\
+  !*** ./src/homework_6/font-awesome.min.css ***!
+  \*********************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+// extracted by mini-css-extract-plugin
+
+/***/ }),
+
 /***/ "./src/homework_6/homework_6.css":
 /*!***************************************!*\
   !*** ./src/homework_6/homework_6.css ***!
@@ -108,7 +119,21 @@
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _homework_6_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./homework_6.css */ "./src/homework_6/homework_6.css");
 /* harmony import */ var _homework_6_css__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_homework_6_css__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _font_awesome_min_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./font-awesome.min.css */ "./src/homework_6/font-awesome.min.css");
+/* harmony import */ var _font_awesome_min_css__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_font_awesome_min_css__WEBPACK_IMPORTED_MODULE_1__);
 
+
+var btns = document.getElementsByClassName('page-nav__switcher');
+var par = document.getElementsByClassName('page-nav');
+
+btns[0].onclick = function () {
+  par[0].classList.add("opened");
+  console.log('ПРивет');
+};
+
+btns[1].onclick = function () {
+  par[0].classList.remove("opened");
+};
 
 /***/ }),
 
