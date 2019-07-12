@@ -10,5 +10,12 @@
   ],
   "homework_6": [
     "./src/homework_6/homework_6.js"
+  ],
+  "pearl_harbor": [
+    "./src/pearl_harbor/pearl_harbor.js"
+  ],
+  "neutronmail": [
+    "./src/neutronmail/neutronmail.js"
   ]
+
 }
