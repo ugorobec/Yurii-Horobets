@@ -1,0 +1,229 @@
+* {
+    box-sizing: border-box;
+}
+html {
+    font-size: 16px;
+    font-family: 'Titillium Web', sans-serif;
+}
+h1,h2,h3,ul,ol,p,a,body,button,section {
+    padding: 0;
+    margin: 0;
+}
+.container {
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+.page_nav {
+    margin-top: 82px;
+    display: flex;
+    justify-content: space-between;
+    
+}
+.logo {
+    color: #858688;
+    font-size: 30px;
+    font-weight: bold;
+    width: 157px;
+    line-height: 1;
+    letter-spacing: 0.46px;
+    
+}
+.logo span {
+    color: #5b4295;
+}
+.page_nav__menu {
+    display: flex;
+    list-style: none; 
+    justify-content: flex-end;
+    width: calc(1400px - 157px - 235px);
+}
+.page_nave__item {
+    padding-right: 26px;
+    
+}
+.page_nave__item a {
+    text-decoration: none;
+    color: #454545;
+}
+.logins_btn {
+    width: 235px;
+    display: flex;
+    justify-content: flex-end;
+}
+.log_in {
+    margin-right: 25px;
+    padding-top: 4px;
+}
+.fas.fa-sign-in-alt {
+    color: #582c7e;
+    padding-right: 8px;
+}
+.sign_up {
+    width: 94px;
+    height: 40px;
+    border-radius: 20px;
+    box-shadow: 0px 7px 9px -1px rgba(142, 117, 222, 0.15), 0px 13px 21px 0 rgba(20, 80, 204, 0.27), 0px 13px 21px 0 rgba(0, 0, 0, 0.15), 0px 4px 16px 0 rgba(102, 145, 233, 0.33), 0px 4px 16px 0 rgba(0, 0, 0, 0.09), 0px 3px 9px 0 rgba(53, 103, 205, 0.09), 0px 3px 9px 0 rgba(0, 0, 0, 0.09), 0px 3px 3px 0 rgba(102, 145, 233, 0.09), 0px 3px 3px 0 rgba(0, 0, 0, 0.17);
+    background: linear-gradient(-45deg, #6276cc, #582c7e);
+    color: #fff;
+    border: none;
+    font-weight: bold;
+    font-size: 16px;
+}
+.english, .french, .italian, .polish {
+   display: inline;
+    
+}
+.languages a {
+    display: inline-block;
+    text-decoration: none;
+    color: #959595;
+    font-size: 14px;
+    padding-top: 8px;
+    
+}
+.languages div:not(:first-child)::before {
+    content: '/';
+    padding-left: 10px;
+    margin-right: 6px;
+}
+.main {
+    margin-top: 146px;
+    background: url(../../assets/images/neutronmail/bcg.jpg);
+    background-position: top;
+    background-repeat: no-repeat;
+    height: 600px;   
+}
+
+.section_content {
+    margin: 0 auto;
+    text-align: center;
+}
+.section_description {
+    font-size: 60px;
+    font-weight: 600;
+    color: rgba(69, 69, 69, 0.84);
+    opacity: 0.84;
+    letter-spacing: 0.6px;
+
+}
+.sub_section_description {
+    font-size: 36px;
+    line-height: 1.56;
+    letter-spacing: 0.36px;
+    color: rgba(70, 70, 70, 0.84);
+}
+.sub_section_description span {
+    color: rgba(252, 32, 40, 0.84);
+}
+.section_buttons {
+    margin-top: 58px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.create_account__btn {
+    width: 246px;
+    height: 56px;
+    border-radius: 28px;
+    box-shadow: 0px 7px 9px 0 rgba(100, 115, 151, 0.15), 0px 13px 21px 0 rgba(20, 80, 204, 0.27), 0px 13px 21px 0 rgba(0, 0, 0, 0.15), 0px 4px 16px 0 rgba(102, 145, 233, 0.33), 0px 4px 16px 0 rgba(0, 0, 0, 0.09), 0px 3px 9px 0 rgba(53, 103, 205, 0.09), 0px 3px 9px 0 rgba(0, 0, 0, 0.09), 0px 3px 3px 0 rgba(102, 145, 233, 0.09), 0px 3px 3px 0 rgba(0, 0, 0, 0.17);
+    background: linear-gradient(to right, #646c92, #5f2e69);
+    border: none;
+    font-size: 18px;
+    font-weight: bold;
+    color: #fff;
+    margin-right: 25px;
+    
+}
+.apple__btn,
+.google__btn {
+    width: 46px;
+    height: 46px;
+    opacity: 0.8;
+    background-color: #5f2966;
+    border-radius: 50%;
+    border: none; 
+    color: #fff;
+}
+.apple__btn {
+    margin-right: 21px;
+}
+.fab.fa-apple, 
+.fab.fa-google-play {
+    
+    font-size: 22px;
+    line-height: 1.68;
+    letter-spacing: 0.22px;
+}
+.middle {
+    margin-top: 16px;
+    
+}
+.flex_container_4 {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+    max-width: 1800px;
+    margin: 0 auto;
+}
+.perfect_privacy, 
+.perfect_anonymous,
+.perfect_encripion,
+.perfect_security {
+    padding: 0 40px;
+    
+   
+}
+
+.perfect_encripion img {
+    width: 90%;
+}
+
+.header_blok {
+    display: flex;
+}
+
+.description_block h3 {
+    font-size: 18px;
+    line-height: 1.22;
+    letter-spacing: 0.18px;
+    color: #959393;
+
+}
+.description_block h2 {
+    font-size: 30px;
+    line-height: 1.23;
+    letter-spacing: 0.3px;
+    color: #555555;
+}
+
+
+.middle p{
+    font-size: 14px;
+    line-height: 1.57;
+    letter-spacing: 0.14px;
+    color: #959393;
+    width: 350px;
+}
+.perfect_security {
+    justify-self: start;
+    flex-basis: 30%;
+    flex-shrink: 2;
+    margin-top: 15px;
+    
+}
+.perfect_security__subheader {
+    font-size: 60px;
+    color: #535353;
+}
+.about_datacenter {
+    font-size: 24px;
+    color: #959393;
+}
+.about_datacenter span {
+    color: #f65151; 
+}
+
+

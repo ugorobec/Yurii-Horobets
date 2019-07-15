@@ -1,0 +1,47 @@
+@import "./styles/mixins.scss";
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+[class*='col-'] {
+    flex-grow: 0;
+    flex-shrink: 0;
+    height: 200px;
+    padding: 0.5rem;
+}
+
+.benefit {
+    background: red;
+}
+
+.col-1 {
+    width: 33.333%;
+}
+
+.col-2 {
+    width: 66.666%;
+}
+
+.col-3 {
+    width: 100%;
+}
+
+@include mobile {
+    .col-xs-1 {
+        width: 33.333%;
+    }
+    
+    .col-xs-2 {
+        width: 66.666%;
+    }
+    
+    .col-xs-3 {
+        width: 100%;
+    }
+}

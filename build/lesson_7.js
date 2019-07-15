@@ -81,36 +81,48 @@
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 5);
+/******/ 	return __webpack_require__(__webpack_require__.s = 6);
 /******/ })
 /************************************************************************/
 /******/ ({
 
-/***/ "./src/neutronmail/neutronmail.js":
-/*!****************************************!*\
-  !*** ./src/neutronmail/neutronmail.js ***!
-  \****************************************/
+/***/ "./src/lesson_7/lesson_7.js":
+/*!**********************************!*\
+  !*** ./src/lesson_7/lesson_7.js ***!
+  \**********************************/
 /*! no exports provided */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-!(function webpackMissingModule() { var e = new Error("Cannot find module './neutronmail.css'"); e.code = 'MODULE_NOT_FOUND'; throw e; }());
+/* harmony import */ var _lesson_7_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./lesson_7.scss */ "./src/lesson_7/lesson_7.scss");
+/* harmony import */ var _lesson_7_scss__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_lesson_7_scss__WEBPACK_IMPORTED_MODULE_0__);
 
 
 /***/ }),
 
-/***/ 5:
-/*!**********************************************!*\
-  !*** multi ./src/neutronmail/neutronmail.js ***!
-  \**********************************************/
+/***/ "./src/lesson_7/lesson_7.scss":
+/*!************************************!*\
+  !*** ./src/lesson_7/lesson_7.scss ***!
+  \************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! ./src/neutronmail/neutronmail.js */"./src/neutronmail/neutronmail.js");
+// extracted by mini-css-extract-plugin
+
+/***/ }),
+
+/***/ 6:
+/*!****************************************!*\
+  !*** multi ./src/lesson_7/lesson_7.js ***!
+  \****************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__(/*! ./src/lesson_7/lesson_7.js */"./src/lesson_7/lesson_7.js");
 
 
 /***/ })
 
 /******/ });
-//# sourceMappingURL=neutronmail.js.map
+//# sourceMappingURL=lesson_7.js.map

@@ -16,6 +16,8 @@
   ],
   "neutronmail": [
     "./src/neutronmail/neutronmail.js"
+  ],
+  "lesson_7": [
+    "./src/lesson_7/lesson_7.js"
   ]
-
 }
