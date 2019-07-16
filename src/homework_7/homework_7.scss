@@ -1,0 +1,173 @@
+@import './styles/mixins.scss';
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+    color: #fff;
+    font-family: 'Rubik', sans-serif;
+
+}
+body {
+    margin: 0 auto;
+    padding: 0;
+}
+.container {
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
+}
+.start-page {
+    background-color: #313a5a;
+    
+   
+}
+.sub-container{
+    width: 100%;
+    max-width: 1178px;
+    margin: 0 auto;
+    
+}
+
+.page-header {
+    height: 58px;
+    padding-top: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+       
+    &__logo {
+        font-size: 26px;
+        font-weight: 500;
+        flex: 1;
+    }
+        a {
+            text-decoration: none;
+            color: #fff;
+        }
+    &__list {
+        flex: 1.5;      
+        display: flex;
+        justify-content: space-around;
+    }
+    &__login-form {
+        flex: 1;
+        display: flex;
+        justify-content: flex-end;
+    }
+}
+
+.page-header__item {
+        text-decoration: none;
+        color: #fff;
+        &:hover {
+            color: #1fdb84;
+            transition: all 1s ease;
+            padding-right: 0;
+        }
+    }   
+.login,
+.register {
+    @include transparent_btn (120px,40px);
+    &:hover {
+        @include green_btn (120px, 40px);           
+    }
+}
+.main-content {
+    background-image: url(../../assets/images/homework_7/Artboard.png);
+    background-position: bottom 100% left 80%;
+    background-repeat: no-repeat;
+    margin-top: 57px;
+    background-size: contain;
+    
+}
+.main-content__wrap {
+    width: 50%;
+}
+.main-content {
+    &__tittle {
+    padding-top: 100px;
+    }
+    h1 {
+        font-size: 48px;
+        font-weight: bold;
+    }
+    &__subscription{
+        p {
+        line-height: 2;
+        margin-top: 40px;
+        margin-bottom: 35px;
+        }    
+    }
+    &__button {
+        @include green_btn (200px, 60px);
+        margin-bottom: 314px;
+        
+    }
+}
+.paid-plan {
+    background-color: #f8f9fc;
+    position: relative;
+}
+.columns_1_3 {
+    border-radius: 10px;
+    box-shadow: 0 10px 34px 0 rgba(210, 210, 210, 0.5);
+    background-color: #ffffff;
+    margin-top: -100px;
+    position: absolute;
+    right: 50%;
+    transform: translateX(50%);
+    display: flex;
+    justify-content: space-between;
+    
+}
+.advantages {
+    margin-top: 66px;
+    margin-left: 80px;
+    
+    &__image {
+        width: 72px;
+        height: 72px;
+        border-radius: 6px;
+        background-color: #f1fff8;  
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    &__caption {
+        font-size: 18px;
+        color: #031d5b;
+        font-weight: 500;
+        margin-top: 26px;
+        padding-bottom: 28px;
+        position: relative;
+        &:after {
+            content: '';
+            height: 4px;
+            width: 60px;
+            background-color: #1fdb84;
+            left: 0;
+            bottom: 0;
+            position: absolute;
+        }
+    }      
+    &__text {
+        line-height: 2;  
+        color: #5b6c94;
+        margin-top: 18px;
+    }
+}
+
+
+
+
+
+
+        
+    
+
+
+    
+
