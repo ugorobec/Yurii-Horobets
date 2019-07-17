@@ -98,6 +98,14 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _homework_7_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./homework_7.scss */ "./src/homework_7/homework_7.scss");
 /* harmony import */ var _homework_7_scss__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_homework_7_scss__WEBPACK_IMPORTED_MODULE_0__);
 
+var btns = document.getElementsByClassName('hamburger');
+var par = document.getElementsByClassName('page-header');
+
+if (btns.length > 0) {
+  btns[0].onclick = function () {
+    par[0].classList.toggle("opened");
+  };
+}
 
 /***/ }),
 
