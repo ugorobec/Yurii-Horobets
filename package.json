@@ -8,7 +8,8 @@
     "start": "npm run dev",
     "server": "node dev-server.js",
     "watch": "webpack -w",
-    "new:page": "node page-gen",
+    "page:add": "node page-add.js",
+    "page:remove": "node page-remove.js",
     "dev": "npm-run-all --parallel server watch",
     "build": "rimraf build & webpack",
     "publish": "rimraf docs & rimraf build & TARGET=docs webpack"
@@ -44,7 +45,9 @@
     "style-loader": "^0.18.2",
     "webpack": "^4.29.6",
     "webpack-cli": "^3.3.0",
-    "webpack-livereload-plugin": "^2.2.0"
+    "webpack-livereload-plugin": "^2.2.0",
+    "font-awesome": "^4.7.0",
+    "minimist": "^1.2.0"
   },
   "dependencies": {
     "font-awesome": "^4.7.0",

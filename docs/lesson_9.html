@@ -1,0 +1,50 @@
+
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="http://localhost:35729/livereload.js"></script>
+    <title key='title'></title>
+  <link href="lesson_9.css" rel="stylesheet"></head>
+  <body>
+    <button onclick="hello()"> Click me</button>
+    <button onclick="toggleColor()" id="btn1"> Click me</button>
+    <button onclick="moveButton()" id="btn3"> Click me</button>
+    <p id="output"></p>
+    <script>
+      function hello () {
+        const name = prompt('Entner name');
+        const element = document.querySelector('#output');
+        console.log(element);
+        element.textContent = 'Hello ' + name;
+       
+      }
+      
+      function toggleColor () {
+        const btn = document.querySelector('#btn1');
+        btn.style.backgroundColor = "red";
+        if (btn.style.backgroundColor === "red") {
+          btn.style.backgroundColor = " ";
+          btn.textContent = 'OFF';
+        } else {
+          btn.style.backgroundColor = 'red'; 
+          btn.textContent = 'ON'; 
+        }
+      } 
+      function moveButton() {
+      
+        const element = document.querySelector("#btn3");
+        const coord = parseInt(element.style.left);
+        element.style.position = 'relative'; 
+        btn3.style.transition = all 
+        element.style.left = coord + 50 + 'px';
+        console.log(coord);
+      }
+
+   </script>
+  <script type="text/javascript" src="lesson_9.js"></script></body>
+  </html>
+

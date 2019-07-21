@@ -1,15 +1,24 @@
 // include node fs module
 const fs = require('fs');
-const pageName = process.argv.slice(-1)[0];
+const minimist = require('minimist');
+const argv = process.argv.slice(2);
+const pageName = minimist(argv)['_'][0];
+const SUPPORTED_STYLES = ['css', 'scss'];
+const stylesType = minimist(argv)['styles'] || SUPPORTED_STYLES[0];
 const entries = require('./config/entries.json');
 
+
 function checkValid(str){
-  const re = /^\S+$/g
+  const re = /^\S+$/g;
   return re.test(str)
 }
 
 if (!checkValid(pageName)) {
-  throw Error('Validation error: page name should contains only single word in lower case for example my_cool_page')
+  throw Error('Validation error: page name should contains only single word in lower case for example my_cool_page');
+}
+
+if (stylesType && SUPPORTED_STYLES.indexOf(stylesType) === -1) {
+  throw Error('Validation error: ENTER ONLY SUPPORTED STYLES TYPE CSS or SCSS!!!');
 }
 
 const htmlTemplate = `
@@ -30,11 +39,11 @@ const htmlTemplate = `
 
 `;
 
-const jsTemplate = `import './${pageName}.css';`;
+let jsTemplate = `import './${pageName}.${stylesType}';`;
 
 const dir = `${__dirname}/src/${pageName}`;
 
-if (!fs.existsSync(dir)){
+if (!fs.existsSync(dir)) {
   fs.mkdirSync(dir);
 }
 
@@ -45,9 +54,9 @@ fs.writeFile(`${pathToFile}.html`, htmlTemplate, function (err) {
   console.log('HTML file is created successfully.');
 });
 
-fs.writeFile(`${pathToFile}.css`, '', function (err) {
+fs.writeFile(`${pathToFile}.${stylesType}`, '', function (err) {
   if (err) throw err;
-  console.log('CSS file is created successfully.');
+  console.log(`${stylesType} file is created successfully.`);
 });
 
 fs.writeFile(`${pathToFile}.js`, jsTemplate, function (err) {
