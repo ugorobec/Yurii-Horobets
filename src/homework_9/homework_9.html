@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+    content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <script src="http://localhost:35729/livereload.js"></script>
+  <title key='title'></title>
+</head>
+
+<body>
+  <section class='trafic-lite'>
+    <div class="trafic-lite__battle">
+      <div class="trafic trafic-lite__battle_red" id="red"></div>
+      <div class="trafic trafic-lite__battle_yellow" id="yellow"></div>
+      <div class="trafic trafic-lite__battle_green" id="green"></div>
+    </div>
+    <div class="trafic-lite__buttons">
+      <button class="red btn" id="btn_red" onclick="changeColorRed()">Light up "RED"</button>
+      <button class="yellow btn" id="btn_yellow" onclick="changeColorYellow()">Light up "YELLOW"</button>
+      <button class="green btn" id="btn_green" onclick="changeColorGreen()">Light up "GREEN"</button>
+    </div>
+  </section>
+  <script>
+    const circleGreen = document.querySelector('#green');
+    const circleRed = document.querySelector('#red');
+    const circleYellow = document.querySelector('#yellow');
+
+    function changeColorRed() {
+      circleRed.style.opacity = '1';
+      circleGreen.style.opacity = '0.2';
+      circleYellow.style.opacity = '0.2';
+    }
+    function changeColorGreen() {
+      circleRed.style.opacity = '0.2';
+      circleGreen.style.opacity = '1';
+      circleYellow.style.opacity = '0.2';
+    }
+    function changeColorYellow() {
+      circleRed.style.opacity = '0.2';
+      circleGreen.style.opacity = '0.2';
+      circleYellow.style.opacity = '1';
+    }
+  </script>
+  <script src="./script.js"></script>
+</body>
+
+</html>
