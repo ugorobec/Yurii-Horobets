@@ -81,15 +81,98 @@
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 4);
+/******/ 	return __webpack_require__(__webpack_require__.s = 11);
 /******/ })
 /************************************************************************/
 /******/ ({
 
-/***/ "./src/pearl_harbor/pearl_harbor.css":
-/*!*******************************************!*\
-  !*** ./src/pearl_harbor/pearl_harbor.css ***!
-  \*******************************************/
+/***/ "./src/lesson_10/lesson_10.js":
+/*!************************************!*\
+  !*** ./src/lesson_10/lesson_10.js ***!
+  \************************************/
+/*! no exports provided */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _lesson_10_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./lesson_10.scss */ "./src/lesson_10/lesson_10.scss");
+/* harmony import */ var _lesson_10_scss__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_lesson_10_scss__WEBPACK_IMPORTED_MODULE_0__);
+
+var numbers = [];
+var btnLogIn = document.querySelector('#btn');
+var btnAddNumber = document.querySelector('#addNumberBtn');
+var output = document.querySelector('#output');
+btnLogIn.onclick = logIn;
+btnAddNumber.onclick = addNumber;
+
+function logIn() {
+  var userName = prompt();
+
+  while (userName !== 'admin') {
+    userName = prompt('Username not found!', '');
+  }
+
+  alert('Hello admin');
+}
+
+function calcTotal(numbersArray) {
+  var total = 0;
+
+  for (var i = 0; i < numbersArray.length; i++) {
+    total = total + numbersArray[i];
+  }
+
+  return total;
+}
+
+function print(printString) {
+  output.textContent = printString;
+}
+
+function addNumber() {
+  var number = parseInt(prompt('Enter any number'));
+
+  while (isNaN(number)) {
+    number = parseInt(prompt('Enter any number'));
+  }
+
+  numbers.push(number);
+  print('Total +' + calcTotal(numbers));
+}
+
+function find(array, number) {
+  var indexOfNumber = -1;
+
+  for (var i = 0; i < array.length; i++) {
+    if (array[i] === number) {
+      indexOfNumber = i;
+      break;
+    }
+  }
+
+  return indexOfNumber;
+}
+
+function findMax(array) {
+  var maxOfNumber = array[0];
+
+  for (var i = 1; i < array.length; i++) {
+    if (array[i] > maxOfNumber) {
+      maxOfNumber = array[i];
+    }
+  }
+
+  return maxOfNumber;
+}
+
+console.log(findMax([1, 5, 98, 11113, 78, 2]));
+
+/***/ }),
+
+/***/ "./src/lesson_10/lesson_10.scss":
+/*!**************************************!*\
+  !*** ./src/lesson_10/lesson_10.scss ***!
+  \**************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -97,66 +180,17 @@
 
 /***/ }),
 
-/***/ "./src/pearl_harbor/pearl_harbor.js":
+/***/ 11:
 /*!******************************************!*\
-  !*** ./src/pearl_harbor/pearl_harbor.js ***!
+  !*** multi ./src/lesson_10/lesson_10.js ***!
   \******************************************/
-/*! no exports provided */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _pearl_harbor_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./pearl_harbor.css */ "./src/pearl_harbor/pearl_harbor.css");
-/* harmony import */ var _pearl_harbor_css__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_pearl_harbor_css__WEBPACK_IMPORTED_MODULE_0__);
-
-var randomLoc = Math.floor(Math.random() * 5);
-var location1 = randomLoc;
-var location2 = location1 + 1;
-var location3 = location2 + 1;
-var guess;
-var hits = 0;
-var guesses = 0;
-var isSunk = false;
-console.log(location1);
-
-while (isSunk == false) {
-  guess = prompt("Заряжаю! (введите клетку от 0 до 6):");
-
-  if (guess < 0 || guess > 6) {
-    alert('Please, enter a valid cell number');
-  } else {
-    guesses = guesses + 1;
-
-    if (guess == location1 || guess == location2 || guess == location3) {
-      alert('Попадание!');
-      hits = hits + 1;
-
-      if (hits == 3) {
-        isSunk = true;
-        alert('Вы уничтожили корабль');
-      }
-    } else {
-      alert('Промазал!');
-    }
-  }
-}
-
-var stat = 'Вы уничтожили корабль с ' + guesses + ' попыток';
-alert(stat);
-
-/***/ }),
-
-/***/ 4:
-/*!************************************************!*\
-  !*** multi ./src/pearl_harbor/pearl_harbor.js ***!
-  \************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! ./src/pearl_harbor/pearl_harbor.js */"./src/pearl_harbor/pearl_harbor.js");
+module.exports = __webpack_require__(/*! ./src/lesson_10/lesson_10.js */"./src/lesson_10/lesson_10.js");
 
 
 /***/ })
 
 /******/ });
-//# sourceMappingURL=pearl_harbor.js.map
+//# sourceMappingURL=lesson_10.js.map

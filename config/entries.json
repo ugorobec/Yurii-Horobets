@@ -31,5 +31,8 @@
   ],
   "homework_9": [
     "./src/homework_9/homework_9.js"
+  ],
+  "lesson_10": [
+    "./src/lesson_10/lesson_10.js"
   ]
 }
