@@ -57,5 +57,45 @@ function findMax(array) {
    return maxOfNumber;
    
 }
-console.log(findMax([1,5,98,11113,78,2]))
+
+const salaries = [
+  {
+    name: 'John',
+    salary: 2200
+  },
+  {
+    name: 'Mike',
+    salary: 250
+  },
+  {
+    name: 'Alex',
+    salary: 2560
+  },
+  {
+    name: 'James',
+    salary: 1200
+  }
+];
+​
+
+function findLargestSalary(arr) {
+  if (arr[i].salary > arr[0].salary ) {
+    return arr[i].salary;
+  }
+}
+​
+function calcTotalSalaries(arr) {
+  let total = arr[i].salary;
+alert(sum(arr[i].salary))
+}
+​
+findLargestSalary(salaries);
+calcTotalSalaries(salaries);
+Collapse
+
+
+
+
+
+
 
