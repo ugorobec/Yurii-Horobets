@@ -12,8 +12,12 @@ btn.classList.add('btn');
 
 btn.onclick = function () {
     let text = prompt ('Enter text here');
-    let p = document.createElement('p');
-    p.classList.add('random-text')
-    document.body.appendChild(p);
-    p.appendChild(document.createTextNode(text)); 
+    let p = document.createElement('p');   
+    if (text == null) {
+        alert('Ooops...! Nothing to add');
+    } else {
+        p.classList.add('random-text')
+        document.body.appendChild(p);
+        p.appendChild(document.createTextNode(text));
+    }
 }

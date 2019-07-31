@@ -109,9 +109,14 @@ btn.classList.add('btn');
 btn.onclick = function () {
   var text = prompt('Enter text here');
   var p = document.createElement('p');
-  p.classList.add('random-text');
-  document.body.appendChild(p);
-  p.appendChild(document.createTextNode(text));
+
+  if (text == null) {
+    alert('Ooops...! Nothing to add');
+  } else {
+    p.classList.add('random-text');
+    document.body.appendChild(p);
+    p.appendChild(document.createTextNode(text));
+  }
 };
 
 /***/ }),
