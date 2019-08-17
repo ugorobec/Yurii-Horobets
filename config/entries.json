@@ -55,5 +55,8 @@
   ],
   "lesson_14": [
     "./src/lesson_14/lesson_14.js"
+  ],
+  "homework_14": [
+    "./src/homework_14/homework_14.js"
   ]
 }
