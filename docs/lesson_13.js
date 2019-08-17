@@ -81,123 +81,34 @@
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 11);
+/******/ 	return __webpack_require__(__webpack_require__.s = 16);
 /******/ })
 /************************************************************************/
 /******/ ({
 
-/***/ "./src/lesson_10/lesson_10.js":
+/***/ "./src/lesson_13/lesson_13.js":
 /*!************************************!*\
-  !*** ./src/lesson_10/lesson_10.js ***!
+  !*** ./src/lesson_13/lesson_13.js ***!
   \************************************/
 /*! no exports provided */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _lesson_10_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./lesson_10.scss */ "./src/lesson_10/lesson_10.scss");
-/* harmony import */ var _lesson_10_scss__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_lesson_10_scss__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _lesson_13_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./lesson_13.scss */ "./src/lesson_13/lesson_13.scss");
+/* harmony import */ var _lesson_13_scss__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_lesson_13_scss__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _persone__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./persone */ "./src/lesson_13/persone.js");
 
-var numbers = [];
-var btnLogIn = document.querySelector('#btn');
-var btnAddNumber = document.querySelector('#addNumberBtn');
-var output = document.querySelector('#output');
-btnLogIn.onclick = logIn;
-btnAddNumber.onclick = addNumber;
 
-function logIn() {
-  var userName = prompt();
 
-  while (userName !== 'admin') {
-    userName = prompt('Username not found!', '');
-  }
-
-  alert('Hello admin');
-}
-
-function calcTotal(numbersArray) {
-  var total = 0;
-
-  for (var _i = 0; _i < numbersArray.length; _i++) {
-    total = total + numbersArray[_i];
-  }
-
-  return total;
-}
-
-function print(printString) {
-  output.textContent = printString;
-}
-
-function addNumber() {
-  var number = parseInt(prompt('Enter any number'));
-
-  while (isNaN(number)) {
-    number = parseInt(prompt('Enter any number'));
-  }
-
-  numbers.push(number);
-  print('Total +' + calcTotal(numbers));
-}
-
-function find(array, number) {
-  var indexOfNumber = -1;
-
-  for (var _i2 = 0; _i2 < array.length; _i2++) {
-    if (array[_i2] === number) {
-      indexOfNumber = _i2;
-      break;
-    }
-  }
-
-  return indexOfNumber;
-}
-
-function findMax(array) {
-  var maxOfNumber = array[0];
-
-  for (var _i3 = 1; _i3 < array.length; _i3++) {
-    if (array[_i3] > maxOfNumber) {
-      maxOfNumber = array[_i3];
-    }
-  }
-
-  return maxOfNumber;
-}
-
-var salaries = [{
-  name: 'John',
-  salary: 2200
-}, {
-  name: 'Mike',
-  salary: 250
-}, {
-  name: 'Alex',
-  salary: 2560
-}, {
-  name: 'James',
-  salary: 1200
-}];
-
-function findLargestSalary(arr) {
-  if (arr[i].salary > arr[0].salary) {
-    return arr[i].salary;
-  }
-}
-
-function calcTotalSalaries(arr) {
-  var total = arr[i].salary;
-  alert(sum(arr[i].salary));
-}
-
-findLargestSalary(salaries);
-calcTotalSalaries(salaries);
+var personeJack = new _persone__WEBPACK_IMPORTED_MODULE_1__["Persone"]('Jack', 30, 'male');
+console.log(personeJack.greet());
 
 /***/ }),
 
-/***/ "./src/lesson_10/lesson_10.scss":
+/***/ "./src/lesson_13/lesson_13.scss":
 /*!**************************************!*\
-  !*** ./src/lesson_10/lesson_10.scss ***!
+  !*** ./src/lesson_13/lesson_13.scss ***!
   \**************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
@@ -206,17 +117,56 @@ calcTotalSalaries(salaries);
 
 /***/ }),
 
-/***/ 11:
+/***/ "./src/lesson_13/persone.js":
+/*!**********************************!*\
+  !*** ./src/lesson_13/persone.js ***!
+  \**********************************/
+/*! exports provided: Persone */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Persone", function() { return Persone; });
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
+
+function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
+
+var Persone =
+/*#__PURE__*/
+function () {
+  function Persone(name, age, gender) {
+    _classCallCheck(this, Persone);
+
+    this.name = name;
+    this.age = age;
+    this.gender = gender;
+  }
+
+  _createClass(Persone, [{
+    key: "great",
+    value: function great() {
+      return 'Hello my name is' + $(this.name);
+    }
+  }]);
+
+  return Persone;
+}();
+
+/***/ }),
+
+/***/ 16:
 /*!******************************************!*\
-  !*** multi ./src/lesson_10/lesson_10.js ***!
+  !*** multi ./src/lesson_13/lesson_13.js ***!
   \******************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! ./src/lesson_10/lesson_10.js */"./src/lesson_10/lesson_10.js");
+module.exports = __webpack_require__(/*! ./src/lesson_13/lesson_13.js */"./src/lesson_13/lesson_13.js");
 
 
 /***/ })
 
 /******/ });
-//# sourceMappingURL=lesson_10.js.map
+//# sourceMappingURL=lesson_13.js.map

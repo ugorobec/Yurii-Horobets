@@ -76,22 +76,17 @@ const salaries = [
     salary: 1200
   }
 ];
-​
-
 function findLargestSalary(arr) {
   if (arr[i].salary > arr[0].salary ) {
     return arr[i].salary;
   }
 }
-​
 function calcTotalSalaries(arr) {
   let total = arr[i].salary;
 alert(sum(arr[i].salary))
 }
-​
 findLargestSalary(salaries);
 calcTotalSalaries(salaries);
-Collapse
 
 
 

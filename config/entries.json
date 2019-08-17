@@ -43,5 +43,17 @@
   ],
   "homework_10": [
     "./src/homework_10/homework_10.js"
+  ],
+  "lesson_12": [
+    "./src/lesson_12/lesson_12.js"
+  ],
+  "lesson_13": [
+    "./src/lesson_13/lesson_13.js"
+  ],
+  "homework_13": [
+    "./src/homework_13/homework_13.js"
+  ],
+  "lesson_14": [
+    "./src/lesson_14/lesson_14.js"
   ]
 }

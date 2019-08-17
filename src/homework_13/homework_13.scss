@@ -1,0 +1,18 @@
+.container_slider {
+    display: flex;
+    justify-content: center;
+}
+
+section {
+    display: flex;
+    overflow: hidden;
+    height: 500px;
+    border: 2px solid black;
+    width: 100%;
+
+}
+.slide {
+    width: 100px;
+    height: 70px;
+    
+}
